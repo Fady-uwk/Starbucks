@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Starbucks</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#" class="logo"><img src="image/logo.png" alt="Starbucks"></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">What's New</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textBox">
+				<h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+				<p>Starbucks is a restaurant located in Egypt, serving a selection of Coffee that delivers across El Rehab City, Tagammoa 5 - 90 St. Companies and Madinaty - Buildings Area (B1).Their best selling dishes are Café Latte, Toffee Nut Latte, White Chocolate Mocha and Iced White Chocolate Mocha, although they have a variety of dishes and meals to choose from, like Latte, Celebrate With Seasonal Wonders, Mocha and Mocha.</p>
+				<a href="#" id="mybutton">Learn More</a>
+			</div>
+			<div class="imgBox">
+				<img src="image/img1.png" class="starbucks" alt="">
+			</div>
+		</div>
+		<ul class="thumb">
+			<li><img src="image/thumb1.png" id="img1" alt="" onclick="imgSlider('image/img1.png'); changeCircleColor('#017143')"></li>
+			<li><img src="image/thumb2.png" id="img2" alt="" onclick="imgSlider('image/img2.png'); changeCircleColor('#eb7495')"></li>
+			<li><img src="image/thumb3.png" id="img3" alt="" onclick="imgSlider('image/img3.png'); changeCircleColor('#d752b1')"></li>
+		</ul>
+		<ul class="sci">
+			<li><a href="#"><img src="image/facebook.png" alt=""></a></li>
+			<li><a href="#"><img src="image/twitter.png" alt=""></a></li>
+			<li><a href="#"><img src="image/instagram.png" alt=""></a></li>
+		</ul>
+	</section>
+
+	<script type="text/javascript">
+		function imgSlider(anything) {
+			document.querySelector('.starbucks').src = anything;
+		}
+
+		function changeCircleColor(color) {
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+
+	</script>
+
+</body>
+
+</html>
